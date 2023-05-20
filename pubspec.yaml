@@ -64,6 +64,7 @@ flutter:
   assets:
     - images/avatar/memoji.jpg
     - images/recommended/d2.jpg
+    - images/popular/pink-beach.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

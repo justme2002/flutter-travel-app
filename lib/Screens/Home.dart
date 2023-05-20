@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../Widgets/HeaderBar.dart';
 import '../Widgets/CategoryList.dart';
 import '../Widgets/MyAppBar.dart';
+import '../Widgets/PopularCard.dart';
 import '../Widgets/RecommendCardList.dart';
 
 class Home extends StatelessWidget {
@@ -36,10 +37,33 @@ class Home extends StatelessWidget {
               right: 20,
               bottom: 0,
             ),
+            Container(
+              margin: const EdgeInsets.only(top: 620),
+              height: MediaQuery.of(context).size.height,
+              child: ListView(
+                children: const [
+                  PopularCard(),
+                  Padding(
+                    padding: EdgeInsets.only(top: 40),
+                    child: PopularCard(),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 40),
+                    child: PopularCard(),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 40),
+                    child: PopularCard(),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       )
     );
   }
 }
+
+
 
