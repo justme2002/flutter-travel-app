@@ -15,7 +15,21 @@ class MyApp extends StatelessWidget {
       ),
       title: 'Material App',
       home: Scaffold(
-        body: const Home()
+        body: const Home(),
+        bottomNavigationBar: BottomNavigationBar(
+          showSelectedLabels: true,
+          showUnselectedLabels: false,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home",
+            )
+          ],
+        ),
       ),
     );
   }
